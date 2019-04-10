@@ -103,11 +103,28 @@ function showMapContent(evt, tabName) {
 }
 
 //birds
-$(window).scroll(function(){
-  var h_scroll = $(this).scrollTop();
-  var half_h_scroll = h_scroll/3.5;
-  $('.p_main__welcome-birds').css({'top':'calc(50% - ' + half_h_scroll + 'px)'});
+// $(window).scroll(function(){
+//   var h_scroll = $(this).scrollTop();
+//   var half_h_scroll = h_scroll/3.5;
+//   $('.p_main__welcome-birds').css({'top':'calc(50% - ' + half_h_scroll + 'px)'});
+// })
+
+$('.p_main__welcome').mousemove(function(e) {
+  var birdsMoveX = e.pageX/15;
+  var birdsMoveY = e.pageY/10;
+  console.log(birdsMoveY);
+  $('.p_main__welcome-birds').css({
+    // 'transform':'translate('+ birdsMoveY + 'px, ' + birdsMoveX + 'px'
+    'top': 'calc(300px + ' + birdsMoveY + 'px)',
+    'right': birdsMoveX + 'px'
+  });
 })
+
+function birdShow(){
+  $('.p_main__welcome-birds').addClass('p_main__welcome-birds__show');
+}
+setTimeout(birdShow, 1000);
+
 
 //АНИМАЦИЯ
 AOS.init({

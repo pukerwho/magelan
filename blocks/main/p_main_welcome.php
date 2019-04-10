@@ -1,6 +1,10 @@
 <div class="p_main__welcome">
 	<div class="p_main__welcome-bg"></div>
-	<div class="p_main__welcome-birds"></div>
+	<div class="p-relative">
+		<div class="p_main__welcome-birds">
+			<img src="<?php bloginfo('template_url') ?>/img/birds.png" alt="">
+		</div>	
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
