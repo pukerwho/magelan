@@ -28,16 +28,16 @@ Template Name: Карта
 							</div>	
 						</div>
 						<div class="p_map__nav-list">
-							<li class="active">
+							<li class="active" onclick="showMapContent(event, 'restaurants_first')">
 								Рестораны
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'entertainment_first')">
 								Розваги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'services_first')">
 								Послуги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'shops_first')">
 								Магазини
 							</li>
 						</div>
@@ -52,16 +52,16 @@ Template Name: Карта
 							</div>	
 						</div>
 						<div class="p_map__nav-list">
-							<li class="active">
+							<li onclick="showMapContent(event, 'restaurants_second')">
 								Рестораны
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'entertainment_second')">
 								Розваги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'services_second')">
 								Послуги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'shops_second')">
 								Магазини
 							</li>
 						</div>
@@ -76,16 +76,16 @@ Template Name: Карта
 							</div>	
 						</div>
 						<div class="p_map__nav-list">
-							<li class="active">
+							<li onclick="showMapContent(event, 'restaurants_third')">
 								Рестораны
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'entertainment_third')">
 								Розваги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'services_third')">
 								Послуги
 							</li>
-							<li>
+							<li onclick="showMapContent(event, 'shops_third')">
 								Магазини
 							</li>
 						</div>
@@ -94,25 +94,46 @@ Template Name: Карта
 			</div>
 			<div class="col-md-8">
 				<div class="p_map__grid">
-					<?php 
-				  $custom_query_news = new WP_Query( array( 
-				  	'post_type' => 'restaurants', 
-				  	'orderby' => 'menu_order',
-				  	'order' => 'ASC',
-				  ) );
-				  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
-						<div class="p_map__item">
-							<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
-							<div class="p_map__item-bg">
-								<div class="p_map__item-title">
-									<?php the_title(); ?>
-								</div>
-								<div class="p_map__item-description">
-									В витрине кофейни-кондитерской представлены пирожные, чизкейки, макароны, кексы, эклеры, сладкие рулеты, мармелад, конфеты.
-								</div>
-							</div>
-						</div>
-					<?php endwhile; endif; ?>
+					<!-- Restaurants -->
+					<div id="restaurants_first" class="active p_map__content">
+						<?php get_template_part('blocks/map/p_map_restaurants_first', 'magelan-theme') ?>
+					</div>
+					<div id="restaurants_second" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_restaurants_second', 'magelan-theme') ?>
+					</div>
+					<div id="restaurants_third" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_restaurants_third', 'magelan-theme') ?>
+					</div>
+					<!-- Entertainment -->
+					<div id="entertainment_first" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_entertainment_first', 'magelan-theme') ?>
+					</div>
+					<div id="entertainment_second" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_entertainment_second', 'magelan-theme') ?>
+					</div>
+					<div id="entertainment_third" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_entertainment_third', 'magelan-theme') ?>
+					</div>
+					<!-- Services -->
+					<div id="services_first" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_services_first', 'magelan-theme') ?>
+					</div>
+					<div id="services_second" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_services_second', 'magelan-theme') ?>
+					</div>
+					<div id="services_third" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_services_third', 'magelan-theme') ?>
+					</div>
+					<!-- Shops -->
+					<div id="shops_first" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_shops_first', 'magelan-theme') ?>
+					</div>
+					<div id="shops_second" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_shops_second', 'magelan-theme') ?>
+					</div>
+					<div id="shops_third" class="p_map__content">
+						<?php get_template_part('blocks/map/p_map_shops_third', 'magelan-theme') ?>
+					</div>
 				</div>
 			</div>
 		</div>

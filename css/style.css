@@ -9858,7 +9858,8 @@ a:hover {
     font-family: 'Proxima-Nova-Regular';
     font-size: 18px;
     border-bottom: solid 2px rgba(255, 255, 255, 0.14);
-    padding: 10px 0; }
+    padding: 10px 0;
+    cursor: pointer; }
   .p_map__nav-floor-open + .p_map__nav-list .active {
     color: #43c4c1; }
 
@@ -9869,6 +9870,12 @@ a:hover {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+
+.p_map__grid .active {
+  display: block; }
+
+#restaurants_second, #restaurants_third, #entertainment_first, #entertainment_second, #entertainment_third, #services_first, #services_second, #services_third, #shops_first, #shops_second, #shops_third {
+  display: none; }
 
 /* Background Style For Archive Page */
 .post-type-archive-shops .archive-inner, .post-type-archive-restaurants .archive-inner, .post-type-archive-services .archive-inner, .post-type-archive-entertainment .archive-inner {

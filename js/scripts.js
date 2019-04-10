@@ -87,6 +87,21 @@ $('.p_map__nav-heading').on('click', function(){
   $(this).addClass('p_map__nav-floor-open');
 })
 
+$('.p_map__nav-list li').on('click', function(){
+  $('.p_map__nav-list li').removeClass('active')
+  $(this).addClass('active');
+})
+
+function showMapContent(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("p_map__content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.cssText = 'display:block';
+  evt.currentTarget.className += " active";
+}
+
 //birds
 $(window).scroll(function(){
   var h_scroll = $(this).scrollTop();

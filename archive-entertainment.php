@@ -43,7 +43,7 @@
 			</div>
 			<div id="firstFloor" class="row tabcontent">
 				<?php 
-			  $custom_query_news = new WP_Query( array( 
+			  $custom_query_entertainment = new WP_Query( array( 
 			  	'post_type' => 'entertainment', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
@@ -55,7 +55,7 @@
 						),
 					)
 			  ) );
-			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
+			  if ($custom_query_entertainment->have_posts()) : while ($custom_query_entertainment->have_posts()) : $custom_query_entertainment->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
@@ -72,7 +72,7 @@
 			</div>
 			<div id="secondFloor" class="row tabcontent">
 				<?php 
-			  $custom_query_news = new WP_Query( array( 
+			  $custom_query_entertainment = new WP_Query( array( 
 			  	'post_type' => 'entertainment', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
@@ -84,7 +84,7 @@
 						),
 					)
 			  ) );
-			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
+			  if ($custom_query_entertainment->have_posts()) : while ($custom_query_entertainment->have_posts()) : $custom_query_entertainment->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
@@ -101,7 +101,7 @@
 			</div>
 			<div id="thirdFloor"  class="row tabcontent">
 				<?php 
-			  $custom_query_news = new WP_Query( array( 
+			  $custom_query_entertainment = new WP_Query( array( 
 			  	'post_type' => 'entertainment', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
@@ -113,7 +113,7 @@
 						),
 					)
 			  ) );
-			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
+			  if ($custom_query_entertainment->have_posts()) : while ($custom_query_entertainment->have_posts()) : $custom_query_entertainment->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
