@@ -9894,6 +9894,8 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
