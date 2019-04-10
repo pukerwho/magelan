@@ -6,24 +6,42 @@ use Carbon_Fields\Field;
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
   Container::make( 'theme_options', 'Options' )
-    ->add_tab( __('Common'), array(
+    ->add_tab( __('Общие настройки'), array(
         
     ) )
-    ->add_tab( __('Шапка'), array(
-        Field::make( 'text', 'crb_header_top_text', 'Текст перед номером телефона' ),
-        Field::make( 'text', 'crb_header_top_phone', 'Номер телефона' ),
-        Field::make( 'image', 'crb_header_logo', 'Логотип' )->set_value_type( 'url'),
-    ) )
-    ->add_tab( __('Блок О НАС'), array(
-        Field::make( 'rich_text', 'crb_aboutus_text', 'Текст О НАС' ),
-    ) )
-    ->add_tab( __('Контакты'), array(
-        Field::make( 'complex', 'crb_contacts', __( 'Контактная информация' ) )
+    ->add_tab( __('Бренды'), array(
+        Field::make( 'complex', 'crb_brands', 'Бренды' )
             ->set_layout( 'tabbed-horizontal')
             ->add_fields( array(
-                Field::make( 'text', 'crb_contacts_office', __('Офис') ),
-                Field::make( 'text', 'crb_contacts_phone', __('Номер телефона') ),
-                Field::make( 'text', 'crb_contacts_name', __('Имя') ),
+                Field::make( 'image', 'crb_brands_img', 'Логотип' )->set_value_type( 'url'),
+        ) ),
+    ) )
+    ->add_tab( __('Магазины'), array(
+        Field::make( 'complex', 'crb_shops', 'Слайдер' )
+            ->set_layout( 'tabbed-horizontal')
+            ->add_fields( array(
+                Field::make( 'image', 'crb_shops_img', 'Фото в слайдере' )->set_value_type( 'url'),
+        ) ),
+    ) )
+    ->add_tab( __('Ресторани'), array(
+        Field::make( 'complex', 'crb_restaurants', 'Слайдер' )
+            ->set_layout( 'tabbed-horizontal')
+            ->add_fields( array(
+                Field::make( 'image', 'crb_restaurants_img', 'Фото в слайдере' )->set_value_type( 'url'),
+        ) ),
+    ) )
+    ->add_tab( __('Розваги'), array(
+        Field::make( 'complex', 'crb_entertainment', 'Слайдер' )
+            ->set_layout( 'tabbed-horizontal')
+            ->add_fields( array(
+                Field::make( 'image', 'crb_entertainment_img', 'Фото в слайдере' )->set_value_type( 'url'),
+        ) ),
+    ) )
+    ->add_tab( __('Послуги'), array(
+        Field::make( 'complex', 'crb_services', 'Слайдер' )
+            ->set_layout( 'tabbed-horizontal')
+            ->add_fields( array(
+                Field::make( 'image', 'crb_services_img', 'Фото в слайдере' )->set_value_type( 'url'),
         ) ),
     ) );
 }
