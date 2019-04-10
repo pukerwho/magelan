@@ -9784,12 +9784,6 @@ a:hover {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-.p_map__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr [2];
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px; }
 .p_map__item {
   height: 158px;
   position: relative; }
@@ -9872,7 +9866,11 @@ a:hover {
   transition: all 0.3s; }
 
 .p_map__grid .active {
-  display: block; }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; }
 
 #restaurants_second, #restaurants_third, #entertainment_first, #entertainment_second, #entertainment_third, #services_first, #services_second, #services_third, #shops_first, #shops_second, #shops_third {
   display: none; }

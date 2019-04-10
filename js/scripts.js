@@ -98,7 +98,7 @@ function showMapContent(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  document.getElementById(tabName).style.cssText = 'display:block';
+  document.getElementById(tabName).style.cssText = 'display:grid';
   evt.currentTarget.className += " active";
 }
 
