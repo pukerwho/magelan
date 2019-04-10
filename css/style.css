@@ -9865,6 +9865,14 @@ a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+.p_map__content {
+  display: -ms-grid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; }
+
 .p_map__grid .active {
   display: -ms-grid;
   display: grid;
