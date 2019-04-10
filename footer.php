@@ -2,7 +2,7 @@
     <footer class="footer" id="footer">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-3">
+    			<div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
     				<div class="footer__list">
     					<?php wp_nav_menu([
                 'theme_location' => 'footer_menu_one',
@@ -12,7 +12,7 @@
               ]); ?>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1300">
     				<div class="footer__list">
     					<?php wp_nav_menu([
                 'theme_location' => 'footer_menu_two',
@@ -22,7 +22,7 @@
               ]); ?>
     				</div>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1400">
     				<div class="footer__text">
     					<p>
     						Мы працюємо щоденно  з 9:00 по 21:00	
@@ -35,7 +35,7 @@
     					<a href="tel:+38 (097) 95 77 557">+38 (097) 95 77 557</a>
     				</div>
     			</div>
-    			<div class="col-md-2">
+    			<div class="col-md-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
     				<div class="footer__social">
     					<li><a href="#"><img src="<?php bloginfo('template_url') ?>/img/social/facebook.svg" alt="Facebook"></a></li>
 							<li><a href="#"><img src="<?php bloginfo('template_url') ?>/img/social/twitter.svg" alt="Facebook"></a></li>

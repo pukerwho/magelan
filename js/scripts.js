@@ -93,3 +93,8 @@ $(window).scroll(function(){
   var half_h_scroll = h_scroll/3.5;
   $('.p_main__welcome-birds').css({'top':'calc(50% - ' + half_h_scroll + 'px)'});
 })
+
+//АНИМАЦИЯ
+AOS.init({
+    disable: 'mobile'
+});

@@ -45,6 +45,9 @@ function theme_name_scripts() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'jquery-ui-core' );
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', '','',true);
+    wp_enqueue_script( 'aos', get_template_directory_uri() . '/js/aos.min.js','','',true);
+    wp_enqueue_script( 'splitting', get_template_directory_uri() . '/js/splitting.js','','',true);
+    wp_enqueue_script( 'scrollout', get_template_directory_uri() . '/js/scrollout.min.js','','',true);
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js','','',true);
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', '','',true);
 };

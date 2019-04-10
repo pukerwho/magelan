@@ -1,10 +1,10 @@
-<div class="p_main__shops">
+<div class="p_main__shops" data-splitting>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 d-flex justify-content-center">
 				<div class="p_main__shops-content p_main__block-content">
-					<div class="p_main__shops-info">
-						<div class="p_main__shops-title p_main__block-title">
+					<div class="p_main__shops-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+						<div class="p_main__shops-title p_main__block-title" >
 							<?php _e('Магазини', 'magelan-theme'); ?>
 						</div>
 						<div class="p_main__block-line"></div>
@@ -17,7 +17,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="p_main__shops-img p_main__block-img">
+					<div class="p_main__shops-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
 						<img src="<?php bloginfo('template_url') ?>/img/p_main_about.jpg" alt="Про ТРЦ">
 					</div>
 				</div>
