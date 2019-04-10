@@ -8,8 +8,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="p_main__welcome-title">
-					<?php _e('Магелан', 'magelan-theme'); ?>
+				<div class="p main__welcome-showtitle">
+					<div class="p_main__welcome-title">
+						<?php _e('Магелан', 'magelan-theme'); ?>
+					</div>	
 				</div>
 			</div>
 		</div>

@@ -125,6 +125,11 @@ function birdShow(){
 }
 setTimeout(birdShow, 1000);
 
+function titleShow(){
+  $('.p_main__welcome-title').addClass('p_main__welcome-title__active');
+}
+setTimeout(titleShow, 500);
+
 
 //АНИМАЦИЯ
 AOS.init({

@@ -9226,14 +9226,26 @@ a:hover {
       -webkit-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s; }
+  .p_main__welcome-showtitle {
+    overflow: hidden;
+    display: inline-block;
+    width: auto;
+    height: auto; }
   .p_main__welcome-title {
     color: rgba(15, 56, 74, 0.83);
     font-family: "Streetbrush-Regular";
     font-size: 300px;
-    -webkit-transform: rotate(-16deg);
-    -ms-transform: rotate(-16deg);
-    transform: rotate(-16deg);
+    -webkit-transform: rotate(-16deg) translateX(-120%);
+    -ms-transform: rotate(-16deg) translateX(-120%);
+    transform: rotate(-16deg) translateX(-120%);
     margin-bottom: 240px; }
+    .p_main__welcome-title__active {
+      -webkit-transform: rotate(-16deg) translateX(0%);
+      -ms-transform: rotate(-16deg) translateX(0%);
+      transform: rotate(-16deg) translateX(0%);
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
   .p_main__welcome-social {
     width: 100%;
     position: absolute;
