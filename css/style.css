@@ -9792,9 +9792,13 @@ a:hover {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-  .p_map__item img {
-    width: 100%;
-    height: 100%; }
+  .p_map__item-thumb {
+    height: 158px; }
+    .p_map__item-thumb img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
   .p_map__item-bg {
     width: 100%;
     height: 100%;
