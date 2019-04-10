@@ -13,6 +13,7 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'shops' )
     ->add_fields( array(
+      Field::make( 'textarea', 'crb_shop_shortdesc', 'Короткое описание' ),
       Field::make( 'image', 'crb_shop_logo', 'Лого' )->set_value_type( 'url'),
       Field::make( 'media_gallery', 'crb_shop_photos', 'Галерея' )->set_type( array( 'image' ) ),
       Field::make( 'select', 'crb_shop_floor', __( 'Какой этаж?' ) )
@@ -25,6 +26,7 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'restaurants' )
     ->add_fields( array(
+      Field::make( 'textarea', 'crb_restaurants_shortdesc', 'Короткое описание' ),
       Field::make( 'image', 'crb_restaurants_logo', 'Лого' )->set_value_type( 'url'),
       Field::make( 'media_gallery', 'crb_restaurants_photos', 'Галерея' )->set_type( array( 'image' ) ),
       Field::make( 'select', 'crb_restaurants_floor', __( 'Какой этаж?' ) )
@@ -37,6 +39,7 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'services' )
     ->add_fields( array(
+      Field::make( 'textarea', 'crb_services_shortdesc', 'Короткое описание' ),
       Field::make( 'image', 'crb_services_logo', 'Лого' )->set_value_type( 'url'),
       Field::make( 'media_gallery', 'crb_services_photos', 'Галерея' )->set_type( array( 'image' ) ),
       Field::make( 'select', 'crb_services_floor', __( 'Какой этаж?' ) )
@@ -49,6 +52,7 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'entertainment' )
     ->add_fields( array(
+      Field::make( 'textarea', 'crb_entertainment_shortdesc', 'Короткое описание' ),
       Field::make( 'image', 'crb_entertainment_logo', 'Лого' )->set_value_type( 'url'),
       Field::make( 'media_gallery', 'crb_entertainment_photos', 'Галерея' )->set_type( array( 'image' ) ),
       Field::make( 'select', 'crb_entertainment_floor', __( 'Какой этаж?' ) )

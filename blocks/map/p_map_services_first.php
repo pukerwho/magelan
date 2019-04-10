@@ -27,7 +27,7 @@ if ($custom_query_services->have_posts()) : while ($custom_query_services->have_
 					<?php the_title(); ?>
 				</div>
 				<div class="p_map__item-description">
-					В витрине кофейни-кондитерской представлены пирожные, чизкейки, макароны, кексы, эклеры, сладкие рулеты, мармелад, конфеты.
+					<?php echo carbon_get_the_post_meta('crb_services_shortdesc'); ?>
 				</div>
 			</div>
 		</div>
