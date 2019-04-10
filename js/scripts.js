@@ -130,7 +130,6 @@ function titleShow(){
 }
 setTimeout(titleShow, 500);
 
-
 //АНИМАЦИЯ
 AOS.init({
     disable: 'mobile'

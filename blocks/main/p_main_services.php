@@ -23,5 +23,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="long-services-bubbles-block">
+						<div class="long-services-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="short-services-bubbles-block">
+						<div class="short-services-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

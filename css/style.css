@@ -10017,6 +10017,89 @@ a:hover {
     height: 13px;
     background-color: #ffffff; }
 
+.long-bubbles-block {
+  position: absolute;
+  width: 70px;
+  height: 200px;
+  bottom: 30px;
+  left: 60px; }
+
+.long-bubbles {
+  width: 50px;
+  height: 200px;
+  position: relative; }
+
+.long-bubble {
+  position: absolute;
+  bottom: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.entertainment-bubbles-block {
+  position: absolute;
+  width: 100px;
+  height: 180px;
+  bottom: 90px;
+  right: 100px; }
+
+.entertainment-bubbles {
+  width: 100px;
+  height: 180px;
+  position: relative; }
+
+.entertainment-bubble {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.long-services-bubbles-block {
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  bottom: 60px;
+  right: 90px; }
+
+.long-services-bubbles {
+  width: 100px;
+  height: 250px;
+  position: relative; }
+
+.long-services-bubble {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.short-services-bubbles-block {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 90px;
+  left: 60px; }
+
+.short-services-bubbles {
+  width: 150px;
+  height: 150px;
+  position: relative; }
+
+.short-services-bubble {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
 .swiper-container {
   margin: 0 auto;
   position: relative;

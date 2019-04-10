@@ -23,5 +23,14 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="entertainment-bubbles-block">
+						<div class="entertainment-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
