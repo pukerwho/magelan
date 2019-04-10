@@ -9157,10 +9157,32 @@ a:hover {
         position: absolute;
         bottom: 0;
         right: 0;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%); }
+        -webkit-transform: translateY(50%) rotate(0deg);
+        -ms-transform: translateY(50%) rotate(0deg);
+        transform: translateY(50%) rotate(0deg);
+        -webkit-animation: ship_animate 8s infinite;
+        animation: ship_animate 8s infinite; }
 
+@-webkit-keyframes ship_animate {
+  0% {
+    -webkit-transform: translateY(50%) rotate(0deg);
+    transform: translateY(50%) rotate(0deg); }
+  50% {
+    -webkit-transform: translateY(45%) rotate(-10deg);
+    transform: translateY(45%) rotate(-10deg); }
+  100% {
+    -webkit-transform: translateY(50%) rotate(0deg);
+    transform: translateY(50%) rotate(0deg); } }
+@keyframes ship_animate {
+  0% {
+    -webkit-transform: translateY(50%) rotate(0deg);
+    transform: translateY(50%) rotate(0deg); }
+  50% {
+    -webkit-transform: translateY(45%) rotate(-10deg);
+    transform: translateY(45%) rotate(-10deg); }
+  100% {
+    -webkit-transform: translateY(50%) rotate(0deg);
+    transform: translateY(50%) rotate(0deg); } }
 .p_main__welcome-bg {
   width: 100%;
   height: 1440px;
