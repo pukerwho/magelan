@@ -26,12 +26,92 @@
 					</div>
 				</div>
 			</div>
-			<div class="row tabcontent">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="archive-tabs">
+						<div class="archive-tab active" onclick="showContent(event, 'firstFloor')">
+							<?php _e('I Поверх', 'magelan-theme'); ?>
+						</div>
+						<div class="archive-tab" onclick="showContent(event, 'secondFloor')">
+							<?php _e('II Поверх', 'magelan-theme'); ?>
+						</div>
+						<div class="archive-tab" onclick="showContent(event, 'thirdFloor')">
+							<?php _e('III Поверх', 'magelan-theme'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="firstFloor" class="row tabcontent">
 				<?php 
 			  $custom_query_news = new WP_Query( array( 
 			  	'post_type' => 'restaurants', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
+			  	'meta_query' => array(
+						array(
+							'key'     => 'crb_restaurants_floor',
+							'value'   => 'restaurants_first_floor',
+							'compare' => '=',
+						),
+					)
+			  ) );
+			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
+			  	<div class="col-md-3">
+			  		<div class="archive-item">
+			  			<div class="archive-item__logo">
+			  				<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
+			  			</div>
+			  			<a href="<?php echo get_permalink(); ?>">
+				  			<div class="archive-item__title">
+				  				<?php the_title(); ?>		
+				  			</div>
+				  		</a>
+			  		</div>
+			  	</div>
+			  <?php endwhile; endif; ?>
+			</div>
+			<div id="secondFloor" class="row tabcontent">
+				<?php 
+			  $custom_query_news = new WP_Query( array( 
+			  	'post_type' => 'restaurants', 
+			  	'orderby' => 'menu_order',
+			  	'order' => 'ASC',
+			  	'meta_query' => array(
+						array(
+							'key'     => 'crb_restaurants_floor',
+							'value'   => 'restaurants_second_floor',
+							'compare' => '=',
+						),
+					)
+			  ) );
+			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
+			  	<div class="col-md-3">
+			  		<div class="archive-item">
+			  			<div class="archive-item__logo">
+			  				<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
+			  			</div>
+			  			<a href="<?php echo get_permalink(); ?>">
+				  			<div class="archive-item__title">
+				  				<?php the_title(); ?>		
+				  			</div>
+				  		</a>
+			  		</div>
+			  	</div>
+			  <?php endwhile; endif; ?>
+			</div>
+			<div id="thirdFloor" class="row tabcontent">
+				<?php 
+			  $custom_query_news = new WP_Query( array( 
+			  	'post_type' => 'restaurants', 
+			  	'orderby' => 'menu_order',
+			  	'order' => 'ASC',
+			  	'meta_query' => array(
+						array(
+							'key'     => 'crb_restaurants_floor',
+							'value'   => 'restaurants_third_floor',
+							'compare' => '=',
+						),
+					)
 			  ) );
 			  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
 			  	<div class="col-md-3">
