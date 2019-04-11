@@ -44,6 +44,11 @@ Template Name: Про нас
 						<img src="<?php bloginfo('template_url') ?>/img/logo-footer.svg" alt="">
 					</div>
 				</div>
+				<div class="p-relative">
+					<div class="long-services-bubbles-block">
+						<div class="long-services-bubbles"></div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	<?php endwhile; else: ?>
