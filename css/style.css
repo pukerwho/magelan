@@ -9026,21 +9026,16 @@ a:hover {
     width: 16px;
     height: 16px; }
 
-[data-scroll="out"] .char {
-  opacity: 0.1;
-  -webkit-transform: translateY(0.25em);
-  -ms-transform: translateY(0.25em);
-  transform: translateY(0.25em); }
+[data-scroll] {
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
 
-.p_main__block-title.splitting {
-  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  -o-transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-  -webkit-transition-delay: -webkit-calc( 20ms * var(--char-index) );
-  -o-transition-delay: calc( 20ms * var(--char-index) );
-  transition-delay: calc( 20ms * var(--char-index) ); }
+[data-scroll="in"] {
+  opacity: 1; }
+
+[data-scroll="out"] {
+  opacity: 0; }
 
 .header {
   width: 100%;
@@ -9055,6 +9050,10 @@ a:hover {
     padding: 3px 0 20px 0; }
     .header-in #head_menu li a {
       color: #ffffff !important; }
+  .header__logo {
+    width: 157px; }
+    .header__logo img {
+      width: 100%; }
   .header__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9471,6 +9470,22 @@ a:hover {
   .p_main__brands img {
     position: relative;
     z-index: 2; }
+
+.char {
+  transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition-delay: -webkit-calc(20ms * var(--char-index));
+  -o-transition-delay: calc(20ms * var(--char-index));
+  transition-delay: calc(20ms * var(--char-index)); }
+
+.splitting[data-scroll="out"] .char {
+  opacity: 0.1;
+  -webkit-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  transform: translateY(0.25em); }
 
 .single-shops .single-inner, .single-restaurants .single-inner, .single-entertainment .single-inner, .single-services .single-inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#6dfffb), to(#0e203c));

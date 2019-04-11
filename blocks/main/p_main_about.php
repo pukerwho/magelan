@@ -7,7 +7,7 @@
 						<img src="<?php bloginfo('template_url') ?>/img/p_main_about.jpg" alt="Про ТРЦ">
 					</div>
 					<div class="p_main__about-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
-						<div class="p_main__about-title p_main__block-title">
+						<div class="p_main__about-title p_main__block-title" data-scroll>
 							<?php _e('Про ТРЦ', 'magelan-theme'); ?>
 						</div>
 						<div class="p_main__about-line"></div>

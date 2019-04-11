@@ -134,3 +134,5 @@ setTimeout(titleShow, 500);
 AOS.init({
     disable: 'mobile'
 });
+
+ScrollOut();
