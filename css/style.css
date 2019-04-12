@@ -9234,7 +9234,8 @@ a:hover {
     background: url("../img/bg.jpg");
     -webkit-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 50%; }
   .p_main__welcome-birds {
     opacity: 0;
     width: 100%;
@@ -9273,7 +9274,7 @@ a:hover {
   .p_main__welcome-social {
     width: 100%;
     position: absolute;
-    bottom: 30vh;
+    bottom: 175px;
     font-family: 'Proxima-Nova-Bold';
     font-size: 12px;
     text-transform: uppercase; }
