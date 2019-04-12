@@ -146,3 +146,99 @@ jQuery(document).ready(function($){
     );
   }, randomValue(createShortServicesArray)); 
 });
+
+//News Long Bubles
+jQuery(document).ready(function($){
+  var url = WPURLS.templateUrl;
+  var bArray = [];
+  var sArray = [12,15,18,21,24,27,30];
+  var bgArray = ["bubble-one.png","bubble-two.png"]
+  var speedArray = [1250,1500,1750,2000,2500,2750,3000,3250,3500,3750,4000];
+  var createArray = [400,450,500,550];
+  var randomX = [5,10,15,20,25];
+  var keyframeTime = [1,2,3];
+
+  for (var i = 0; i < $('.long-news-bubbles').width(); i++) {
+      bArray.push(i);
+  }
+  
+  function randomValue(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  setInterval(function(){
+    var size = randomValue(sArray);
+    $('.long-news-bubbles').append('<div class="long-news-bubble" style="right: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px; background: url(' + url + '/img/' + randomValue(bgArray) + '); animation: long_bubble ' + randomValue(keyframeTime) + 's forwards; -webkit-animation: long_bubble ' + randomValue(keyframeTime) + 's forwards;" ></div>');
+    $('.long-news-bubble').animate({
+        'bottom': '100%',
+        'opacity' : '-=0.7'
+    }, randomValue(speedArray), function(){
+        $(this).remove()
+    }
+    );
+  }, randomValue(createArray)); 
+});
+
+//Map Long Bubles
+jQuery(document).ready(function($){
+  var url = WPURLS.templateUrl;
+  var bArray = [];
+  var sArray = [12,15,18,21,24,27,30];
+  var bgArray = ["bubble-one.png","bubble-two.png"]
+  var speedArray = [1250,1500,1750,2000,2500,2750,3000,3250,3500,3750,4000];
+  var createArray = [400,450,500,550];
+  var randomX = [5,10,15,20,25];
+  var keyframeTime = [1,2,3];
+
+  for (var i = 0; i < $('.long-map-bubbles').width(); i++) {
+      bArray.push(i);
+  }
+  
+  function randomValue(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  setInterval(function(){
+    var size = randomValue(sArray);
+    $('.long-map-bubbles').append('<div class="long-map-bubble" style="right: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px; background: url(' + url + '/img/' + randomValue(bgArray) + '); animation: long_bubble ' + randomValue(keyframeTime) + 's forwards; -webkit-animation: long_bubble ' + randomValue(keyframeTime) + 's forwards;" ></div>');
+    $('.long-map-bubble').animate({
+        'bottom': '100%',
+        'opacity' : '-=0.7'
+    }, randomValue(speedArray), function(){
+        $(this).remove()
+    }
+    );
+  }, randomValue(createArray)); 
+});
+
+//Map Short Bubles
+jQuery(document).ready(function($){
+  var url = WPURLS.templateUrl;
+  var bArray = [];
+  var sArray = [12,15,18,21,24,27,30];
+  var bgArray = ["bubble-one.png","bubble-two.png"]
+  var speedArray = [1250,1500,1750,2000,2500,2750,3000,3250,3500,3750,4000];
+  var createArray = [400,450,500,550];
+  var randomX = [5,10,15,20,25];
+  var keyframeTime = [1,2,3];
+
+  for (var i = 0; i < $('.short-map-bubbles').width(); i++) {
+      bArray.push(i);
+  }
+  
+  function randomValue(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  setInterval(function(){
+    var size = randomValue(sArray);
+    $('.short-map-bubbles').append('<div class="short-map-bubble" style="right: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px; background: url(' + url + '/img/' + randomValue(bgArray) + '); animation: long_bubble ' + randomValue(keyframeTime) + 's forwards; -webkit-animation: long_bubble ' + randomValue(keyframeTime) + 's forwards;" ></div>');
+    $('.short-map-bubble').animate({
+        'bottom': '100%',
+        'opacity' : '-=0.7'
+    }, randomValue(speedArray), function(){
+        $(this).remove()
+    }
+    );
+  }, randomValue(createArray)); 
+});

@@ -20,6 +20,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="p-relative">
+						<div class="long-news-bubbles-block">
+							<div class="long-news-bubbles"></div>
+						</div>	
+					</div>
+				</div>
+			</div>
 		</div>
 		<section id="p_main_brands">
 			<?php get_template_part('blocks/main/p_main_brands', 'magelan-theme'); ?>

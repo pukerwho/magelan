@@ -10036,7 +10036,8 @@ a:hover {
   display: none; }
 
 .heroslider {
-  height: 680px; }
+  height: 680px;
+  padding-top: 86px; }
   .heroslider .swiper-container {
     height: 100%; }
   .heroslider .swiper-slide {
@@ -10148,6 +10149,66 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.long-news-bubbles-block {
+  position: absolute;
+  width: 90px;
+  height: 400px;
+  bottom: 30px;
+  right: 60px; }
+
+.long-news-bubbles {
+  width: 90px;
+  height: 400px;
+  position: relative; }
+
+.long-news-bubble {
+  position: absolute;
+  bottom: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.long-map-bubbles-block {
+  position: absolute;
+  width: 90px;
+  height: 300px;
+  bottom: 30px;
+  right: -80px; }
+
+.long-map-bubbles {
+  width: 90px;
+  height: 300px;
+  position: relative; }
+
+.long-map-bubble {
+  position: absolute;
+  bottom: 0;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 1; }
+
+.short-map-bubbles-block {
+  position: absolute;
+  width: 90px;
+  height: 200px;
+  bottom: 30px;
+  left: -90px; }
+
+.short-map-bubbles {
+  width: 90px;
+  height: 200px;
+  position: relative; }
+
+.short-map-bubble {
+  position: absolute;
+  bottom: 0;
   -webkit-background-size: contain !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;

@@ -137,6 +137,24 @@ Template Name: Карта
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="long-map-bubbles-block">
+						<div class="long-map-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="short-map-bubbles-block">
+						<div class="short-map-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
