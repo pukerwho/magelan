@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="p_news__title">
+				<div class="p_news__title" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
 					<h1><?php _e('Новини та  акції', 'magelan-theme'); ?></h1>	
 				</div>
 			</div>
@@ -16,12 +16,12 @@
 	  $custom_query_news = new WP_Query( array( 'post_type' => 'news', 'paged' => $current, 'posts_per_page' => 10) );
 	  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
 			<div class="row p_news__row">
-				<div class="col-md-4">
+				<div class="col-md-4" data-aos="fade-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1100" data-aos-delay="500">
 					<div class="p_news__photo">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>">	
 					</div>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="00">
 					<div class="p_news__content">
 						<div class="p_news__subtitle">
 							<?php the_title(); ?>
