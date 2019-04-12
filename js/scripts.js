@@ -14,12 +14,24 @@ $(window).scroll(function(){
   }
 })
 
+//Main Bg
+var url = WPURLS.templateUrl;
+var bgSmall = '/img/bg.jpg';
+var bgLarge = '/img/bg@2x.jpg';
+console.log('url', url);
 if ($('.p_main__shops').length > 0) {
   var bgHeight = $('.p_main__shops').offset().top;
   var shopsHeight = $('.p_main__shops').height();
+  if (bgHeight > 1800) {
+    bgUrl = url + '/' + bgLarge;
+  }
+  else {
+    bgUrl = url + '/' + bgSmall;
+  }
   console.log(bgHeight);
   $('.p_main__welcome-bg').css({
-    'height': 'calc(' + bgHeight + 'px + ' + shopsHeight/1.5 + 'px)'
+    'height': 'calc(' + bgHeight + 'px + ' + shopsHeight/1.5 + 'px)',
+    'background': 'url('+ bgUrl + ')'
   })
 }
 
