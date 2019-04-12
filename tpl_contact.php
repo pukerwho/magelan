@@ -66,6 +66,15 @@ Template Name: Контакти
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="long-services-bubbles-block">
+						<div class="long-services-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
 		<div class="row p_contact__arenda-row">
 			<?php 
 			$arenda_contacts = carbon_get_the_post_meta( 'crb_arenda_contacts' );
@@ -88,6 +97,15 @@ Template Name: Контакти
 			</div>
 			<?php endforeach; ?>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="short-services-bubbles-block">
+						<div class="short-services-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
 		<div class="row p_contact__bottom">
 			<div class="col-md-5">
 				<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
@@ -101,6 +119,24 @@ Template Name: Контакти
 			</div>
 			<div class="col-md-5 offset-md-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" data-aos-delay="750">
 				<?php echo do_shortcode('[contact-form-7 id="28" title="Контакти - Форма"]') ?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="long-map-bubbles-block">
+						<div class="long-map-bubbles"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-relative">
+					<div class="short-map-bubbles-block">
+						<div class="short-map-bubbles"></div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
