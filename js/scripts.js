@@ -7,12 +7,21 @@ $('.toogle-menu').on('click', function(e) {
 
 $(window).scroll(function(){
   var h_scroll = $(this).scrollTop();
-  if (h_scroll > 56) {
-    $('header').addClass('header__fixed')
+  if (h_scroll > 97) {
+    $('.home .header-in').addClass('header-fix');
   } else {
-    $('header').removeClass('header__fixed')
+    $('.home .header-in').removeClass('header-fix');
   }
 })
+
+if ($('.p_main__shops').length > 0) {
+  var bgHeight = $('.p_main__shops').offset().top;
+  var shopsHeight = $('.p_main__shops').height();
+  console.log(bgHeight);
+  $('.p_main__welcome-bg').css({
+    'height': 'calc(' + bgHeight + 'px + ' + shopsHeight/1.5 + 'px)'
+  })
+}
 
 var swiperAbout = new Swiper('.swiper-about', {
   autoplay: {
@@ -112,7 +121,6 @@ function showMapContent(evt, tabName) {
 $('.p_main__welcome').mousemove(function(e) {
   var birdsMoveX = e.pageX/15;
   var birdsMoveY = e.pageY/10;
-  console.log(birdsMoveY);
   $('.p_main__welcome-birds').css({
     // 'transform':'translate('+ birdsMoveY + 'px, ' + birdsMoveX + 'px'
     'top': 'calc(300px + ' + birdsMoveY + 'px)',
@@ -124,11 +132,6 @@ function birdShow(){
   $('.p_main__welcome-birds').addClass('p_main__welcome-birds__show');
 }
 setTimeout(birdShow, 1000);
-
-function titleShow(){
-  $('.p_main__welcome-title').addClass('p_main__welcome-title__active');
-}
-setTimeout(titleShow, 500);
 
 //АНИМАЦИЯ
 AOS.init({

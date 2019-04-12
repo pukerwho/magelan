@@ -49,6 +49,33 @@
       </div>
     </div>
   </header>
+  <header class="header header-in">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header__row">
+            <div class="header__logo">
+              <a href="<?php echo home_url(); ?>">
+                <img src="<?php bloginfo('template_url') ?>/img/logo-small.svg" alt="Магелан">
+              </a>
+            </div>
+            <div class="header__menu">
+              <div class="header__lang">
+                РУС
+              </div>
+              <?php wp_nav_menu([
+                'theme_location' => 'head_menu',
+                'container' => 'nav',
+                'container_class' => 'head_menu',
+                'menu_id' => 'head_menu',
+                'menu_class' => 'd-flex'
+              ]); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <? else: ?>
     <header class="header header-in">
       <div class="container">
