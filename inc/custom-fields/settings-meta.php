@@ -43,6 +43,11 @@ function crb_attach_theme_options() {
             ->add_fields( array(
                 Field::make( 'image', 'crb_services_img', 'Фото в слайдере' )->set_value_type( 'url'),
         ) ),
+    ) )
+    ->add_tab( __('Соцсети'), array(
+        Field::make( 'text', 'crb_facebook', 'Посилання на Facebook' ),
+        Field::make( 'text', 'crb_instagram', 'Посилання на Instagram' ),
+        Field::make( 'text', 'crb_twitter', 'Посилання на Twitter' ),
     ) );
 }
 
