@@ -23,6 +23,15 @@ if ($('.p_main__shops').length > 0) {
   })
 }
 
+//News Inner BG
+if ($('.p_main__brands').length > 0) {
+  var innerBgHeight = $('.p_main__brands').offset().top;
+  console.log(innerBgHeight);
+  $('.inner-bg').css({
+    'height': innerBgHeight
+  })
+}
+
 var swiperAbout = new Swiper('.swiper-about', {
   autoplay: {
     delay: 5000,
