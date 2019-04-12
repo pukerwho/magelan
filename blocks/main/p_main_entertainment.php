@@ -14,7 +14,7 @@
 						<div class="p_main__entertainment-text p_main__block-text">
 							<?php _e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
 						</div>
-						<a href="#">
+						<a href="/entertainment">
 							<div class="p_main__more">
 								<?php _e('Детальнiше', 'magelan-theme'); ?>
 							</div>
