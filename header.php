@@ -34,7 +34,7 @@
             </div>
             <div class="header__menu">
               <div class="header__lang">
-                РУС
+                УКР
               </div>
               <?php wp_nav_menu([
                 'theme_location' => 'head_menu',
@@ -61,7 +61,7 @@
             </div>
             <div class="header__menu">
               <div class="header__lang">
-                РУС
+                УКР
               </div>
               <?php wp_nav_menu([
                 'theme_location' => 'head_menu',
@@ -89,7 +89,7 @@
               </div>
               <div class="header__menu">
                 <div class="header__lang">
-                  РУС
+                  УКР
                 </div>
                 <?php wp_nav_menu([
                   'theme_location' => 'head_menu',
