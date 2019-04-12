@@ -84,7 +84,7 @@
             <div class="header__row">
               <div class="header__logo">
                 <a href="<?php echo home_url(); ?>">
-                  <img src="<?php bloginfo('template_url') ?>/img/logo-small.svg" alt="Магелан">
+                  <img src="<?php bloginfo('template_url') ?>/img/logo-small.svg" alt="Магелан" width="158px">
                 </a>
               </div>
               <div class="header__menu">

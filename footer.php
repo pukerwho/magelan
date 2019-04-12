@@ -55,8 +55,30 @@
 	    		</div>
 	    	</div>
     	</div>
-    	
     </footer>
+    <?php if( is_page_template( 'tpl_map.php' )): ?>
+        <div class="callback__modal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="callback__box">
+                            <div class="callback__close">
+                                <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="14px">
+                            </div>
+                            <div class="callback__title">
+                                Форма зворотнього зв’язку
+                            </div>
+                            <div class="callback__line"></div>
+                            <div class="callback__form">
+                                <?php echo do_shortcode('[contact-form-7 id="28" title="Контакти - Форма"]') ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__bg"></div>
+    <?php endif ?>
     <?php wp_footer(); ?>
 </body>
 </html>

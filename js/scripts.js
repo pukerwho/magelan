@@ -32,6 +32,24 @@ if ($('.p_main__brands').length > 0) {
   })
 }
 
+//Callback Form Open
+if ($('.callback').length > 0) {
+  $(document).on('click', '.callback', function(){
+    $('.callback__modal').addClass('callback__modal-open');
+    $('body').addClass('modal-open');
+    $('.modal__bg').addClass('modal__bg-open');
+  });
+}
+
+//Callback Form Close
+if ($('.callback__close').length > 0) {
+  $(document).on('click', '.callback__close', function(){
+    $('.callback__modal').removeClass('callback__modal-open');
+    $('body').removeClass('modal-open');
+    $('.modal__bg').removeClass('modal__bg-open');
+  });
+}
+
 var swiperAbout = new Swiper('.swiper-about', {
   autoplay: {
     delay: 5000,
