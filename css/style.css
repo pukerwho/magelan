@@ -9946,6 +9946,30 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px; }
 
+.callback {
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Proxima-Nova-Regular';
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  margin-bottom: 70px; }
+  .callback:after {
+    display: block;
+    content: url(../img/more-big-white.svg);
+    text-align: left;
+    margin-top: 0px; }
+  .callback:hover {
+    color: #00b69d;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s; }
+
 #restaurants_second, #restaurants_third, #entertainment_first, #entertainment_second, #entertainment_third, #services_first, #services_second, #services_third, #shops_first, #shops_second, #shops_third {
   display: none; }
 

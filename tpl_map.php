@@ -138,6 +138,13 @@ Template Name: Карта
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="callback">
+					<?php _e('Форма зворотнього зв’язку', 'magelan-theme'); ?>
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-12">
 				<div class="p-relative">
 					<div class="long-map-bubbles-block">
