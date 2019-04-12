@@ -27,7 +27,7 @@ if ($('.p_main__shops').length > 0) {
 if ($('.p_main__brands').length > 0) {
   var innerBgHeight = $('.p_main__brands').offset().top;
   console.log(innerBgHeight);
-  $('.inner-bg').css({
+  $('.p_news .inner-bg').css({
     'height': innerBgHeight
   })
 }
