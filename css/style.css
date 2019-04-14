@@ -12366,8 +12366,10 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     grid-row-gap: 30px; }
-  .p_main__about-content {
-    margin-bottom: 60px; }
+  .p_main__about {
+    padding-top: 30px; }
+    .p_main__about-content {
+      margin-bottom: 60px; }
   .p_main__shops-content {
     margin-bottom: 60px; }
   .p_main__shops-info {
@@ -12389,6 +12391,10 @@ button.swiper-pagination-bullet {
     font-size: 65px; }
   .p_main__brands {
     margin-bottom: 60px; }
+    .p_main__brands-photo {
+      width: 100%;
+      text-align: center;
+      margin-right: 0px; }
     .p_main__brands-title__inner {
       top: 15px;
       font-size: 85px; }
@@ -12427,6 +12433,9 @@ button.swiper-pagination-bullet {
     margin-bottom: 30px; }
   .p_map__item-description {
     display: none; }
+
+  .inner-bg {
+    height: 100vh; }
 
   .callback__box {
     width: 100%; }

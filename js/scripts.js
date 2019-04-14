@@ -48,12 +48,14 @@ if ($(document).width() < 992) {
 }
 
 //News Inner BG
-if ($('.p_main__brands').length > 0) {
-  var innerBgHeight = $('.p_main__brands').offset().top;
-  console.log(innerBgHeight);
-  $('.p_news .inner-bg').css({
-    'height': innerBgHeight
-  })
+if ($(document).width() > 992) {
+  if ($('.p_main__brands').length > 0) {
+    var innerBgHeight = $('.p_main__brands').offset().top;
+    console.log(innerBgHeight);
+    $('.p_news .inner-bg').css({
+      'height': innerBgHeight
+    })
+  }
 }
 
 //Callback Form Open
