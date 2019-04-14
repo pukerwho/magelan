@@ -44,6 +44,20 @@
                 'menu_class' => 'd-flex'
               ]); ?>
             </div>
+            <div class="mobile-show">
+              <div class="mobile-menu">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mobile-cover">
+                <?php wp_nav_menu([
+                  'theme_location' => 'head_menu',
+                  'container' => 'div',
+                  'container_class' => 'mobile_menu',
+                  'menu_class' => 'mobile__link'
+                ]); ?>
+              </div>
+            </div>
           </div>
         </div>
       </div>

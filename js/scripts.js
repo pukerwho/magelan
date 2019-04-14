@@ -1,8 +1,7 @@
-$('.toogle-menu').on('click', function(e) {
+$('.mobile-menu').on('click', function(e) {
   e.preventDefault;
-  $(this).toggleClass('toogle-menu_active');
-  $('.slide-menu').toggleClass('slide-menu_active');
-  $('.menu li').toggleClass('animate-left');
+  $(this).toggleClass('mobile-menu__active');
+  $('.mobile-cover').toggleClass('mobile-cover__open');
 });
 
 $(window).scroll(function(){
@@ -18,21 +17,34 @@ $(window).scroll(function(){
 var url = WPURLS.templateUrl;
 var bgSmall = '/img/bg.jpg';
 var bgLarge = '/img/bg@2x.jpg';
-console.log('url', url);
-if ($('.p_main__shops').length > 0) {
-  var bgHeight = $('.p_main__shops').offset().top;
-  var shopsHeight = $('.p_main__shops').height();
-  if (bgHeight > 1800) {
-    bgUrl = url + '/' + bgLarge;
+if ($(document).width() > 992) {
+  if ($('.p_main__shops').length > 0) {
+    var bgHeight = $('.p_main__shops').offset().top;
+    var shopsHeight = $('.p_main__shops').height();
+    if (bgHeight > 1800) {
+      bgUrl = url + '/' + bgLarge;
+    }
+    else {
+      bgUrl = url + '/' + bgSmall;
+    }
+    console.log(bgHeight);
+    $('.p_main__welcome-bg').css({
+      'height': 'calc(' + bgHeight + 'px + ' + (shopsHeight - 300) + 'px)',
+      'background': 'url('+ bgUrl + ')'
+    })
   }
-  else {
+}
+
+if ($(document).width() < 992) {
+  if ($('.p_main__about').length > 0) {
+    var bgHeight = $('.p_main__about').offset().top;
+    var aboutHeight = $('.p_main__about').height();
     bgUrl = url + '/' + bgSmall;
+    $('.p_main__welcome-bg').css({
+      'height': 'calc(' + bgHeight + 'px + ' + (aboutHeight - 300) + 'px)',
+      'background': 'url('+ bgUrl + ')'
+    })
   }
-  console.log(bgHeight);
-  $('.p_main__welcome-bg').css({
-    'height': 'calc(' + bgHeight + 'px + ' + shopsHeight/1.5 + 'px)',
-    'background': 'url('+ bgUrl + ')'
-  })
 }
 
 //News Inner BG
