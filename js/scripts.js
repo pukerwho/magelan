@@ -7,9 +7,9 @@ $('.mobile-menu').on('click', function(e) {
 $(window).scroll(function(){
   var h_scroll = $(this).scrollTop();
   if (h_scroll > 97) {
-    $('.home .header-in').addClass('header-fix');
+    $('.home .header').addClass('header-fix');
   } else {
-    $('.home .header-in').removeClass('header-fix');
+    $('.home .header').removeClass('header-fix');
   }
 })
 
