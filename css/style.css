@@ -9707,7 +9707,8 @@ textarea {
   background: url("../img/inner-bg.jpg");
   -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 50%; }
 
 .p_about .heroslider {
   margin-bottom: 74px; }
@@ -12414,9 +12415,17 @@ button.swiper-pagination-bullet {
   .p_contact__bottom-lead {
     margin-bottom: 30px; }
 
+  .p_news__photo {
+    margin-bottom: 30px; }
+
+  .p_single-news__img {
+    margin-bottom: 30px; }
+  .p_single-news__row {
+    margin-bottom: 60px; }
+
   .p_map__nav {
     margin-bottom: 30px; }
-  .p_map__item-bg {
+  .p_map__item-description {
     display: none; }
 
   .callback__box {
