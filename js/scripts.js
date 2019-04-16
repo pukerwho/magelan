@@ -171,15 +171,15 @@ function showMapContent(evt, tabName) {
 //   $('.p_main__welcome-birds').css({'top':'calc(50% - ' + half_h_scroll + 'px)'});
 // })
 
-$('.p_main__welcome').mousemove(function(e) {
-  var birdsMoveX = e.pageX/15;
-  var birdsMoveY = e.pageY/10;
-  $('.p_main__welcome-birds').css({
-    // 'transform':'translate('+ birdsMoveY + 'px, ' + birdsMoveX + 'px'
-    'top': 'calc(300px + ' + birdsMoveY + 'px)',
-    'right': birdsMoveX + 'px'
-  });
-})
+// $('.p_main__welcome').mousemove(function(e) {
+//   var birdsMoveX = e.pageX/15;
+//   var birdsMoveY = e.pageY/10;
+//   $('.p_main__welcome-birds').css({
+//     // 'transform':'translate('+ birdsMoveY + 'px, ' + birdsMoveX + 'px'
+//     'top': 'calc(300px + ' + birdsMoveY + 'px)',
+//     'right': birdsMoveX + 'px'
+//   });
+// })
 
 function birdShow(){
   $('.p_main__welcome-birds').addClass('p_main__welcome-birds__show');
