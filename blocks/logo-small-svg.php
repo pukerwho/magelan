@@ -1,17 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="157px" height="63px" viewBox="0 0 157 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="157px" height="63px" viewBox="0 0 158 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
     <title>Logo Magelan</title>
-    <style>
-        @font-face {
-    font-family: 'Avenir-Next-Regular';
-    src: url('../fonts/AvenirNextCyr-Regular.eot');
-    src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
-    url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
-}
-    </style>
-
     <defs>
         <linearGradient x1="-39.2891896%" y1="100%" x2="100%" y2="60.7175868%" id="linearGradient-1">
             <stop stop-color="#0461EA" offset="0%"></stop>
@@ -27,7 +16,7 @@
             <g id="Group-9">
                 <g id="Group-6" transform="translate(165.000000, 3.000000)">
                     <g id="logo">
-                        <text id="magelan" font-family="Avenir-Next-Regular" font-size="20" font-weight="normal" fill="#FFFFFF">
+                        <text id="Магелан" font-family="Avenir-Next-Regular" font-size="20" font-weight="normal" fill="#FFFFFF">
                             <tspan x="63" y="53">МАГЕЛАН</tspan>
                         </text>
                         <path d="M6,48.4637702 C6,48.4637702 26.0028483,36.0725601 21.9394424,0 C21.9394424,0 33.1410375,10.6269954 35.6544844,25.6249057 C36.7729682,32.2980582 35.6544844,44.4348544 25.0435494,48.8933544 C21.2901353,50.465716 12.1411886,52.9222703 6,48.4637702 Z" id="Path" fill="url(#linearGradient-1)"></path>

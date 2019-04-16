@@ -9248,6 +9248,8 @@ textarea {
         transition: all 0.25s; }
   .header #head_menu .current_page_item a {
     font-weight: 600; }
+  .header #logo #magelan {
+    font-family: 'Avenir-Next-Bold'; }
 
 @-webkit-keyframes header_show {
   0% {

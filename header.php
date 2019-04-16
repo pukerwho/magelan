@@ -34,7 +34,7 @@
             </div>
             <div class="header__logo header__logo-small">
                 <a href="<?php echo home_url(); ?>">
-                  <img src="<?php bloginfo('template_url') ?>/img/logo-small.svg" alt="Магелан" width="158px">
+                  <?php get_template_part('blocks/logo-small-svg') ?>
                 </a>
               </div>
             <div class="header__menu">
@@ -76,7 +76,7 @@
             <div class="header__row">
               <div class="header__logo">
                 <a href="<?php echo home_url(); ?>">
-                  <img src="<?php bloginfo('template_url') ?>/img/logo-small.svg" alt="Магелан" width="158px">
+                  <?php get_template_part('blocks/logo-small-svg') ?>
                 </a>
               </div>
               <div class="header__menu">
