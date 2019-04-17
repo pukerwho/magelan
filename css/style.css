@@ -9380,7 +9380,11 @@ textarea {
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
-    text-align: center; }
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .p_main__welcome-birds__show {
       opacity: 1;
       -webkit-transition: all 0.2s;
@@ -9398,6 +9402,10 @@ textarea {
     -webkit-transform: rotate(-16deg);
     -ms-transform: rotate(-16deg);
     transform: rotate(-16deg);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-bottom: 240px; }
     .p_main__welcome-title__active {
       -webkit-transform: rotate(-16deg) translateX(0%);
