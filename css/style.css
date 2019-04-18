@@ -9067,15 +9067,40 @@ textarea {
   transition: all 0.3s;
   padding: 0;
   padding-bottom: 2px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  outline: none; }
   [type="submit"]:hover {
     color: #00b69d;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
 
-.input-underline:before {
-  content: ''; }
+.input-underline {
+  display: inline-block;
+  position: relative; }
+  .input-underline:before {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    background-color: #37a19f;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .input-underline:hover:before {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+div.wpcf7-response-output {
+  color: #ffffff; }
+
+.ajax-loader {
+  position: absolute;
+  bottom: -30px;
+  left: 0; }
 
 ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */

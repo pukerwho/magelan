@@ -76,8 +76,7 @@ if ($('.callback__close').length > 0) {
 
 //Input Button Hover
 if ($('.wpcf7-form-control.wpcf7-submit').length > 0) {
-  $('.wpcf7-form-control.wpcf7-submit').before('<div class="input-underline">')
-  $('.wpcf7-form-control.wpcf7-submit').after('</div>')
+  $('.wpcf7-form-control.wpcf7-submit').wrap('<div class="input-underline"></div>')
 }
 
 var swiperAbout = new Swiper('.swiper-about', {
