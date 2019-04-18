@@ -27,7 +27,6 @@ if ($(document).width() > 992) {
     else {
       bgUrl = url + '/' + bgSmall;
     }
-    console.log(bgHeight);
     $('.p_main__welcome-bg').css({
       'height': 'calc(' + bgHeight + 'px + ' + (shopsHeight - 300) + 'px)',
       'background': 'url('+ bgUrl + ')'
@@ -51,7 +50,6 @@ if ($(document).width() < 992) {
 if ($(document).width() > 992) {
   if ($('.p_main__brands').length > 0) {
     var innerBgHeight = $('.p_main__brands').offset().top;
-    console.log(innerBgHeight);
     $('.p_news .inner-bg').css({
       'height': innerBgHeight
     })
@@ -76,12 +74,27 @@ if ($('.callback__close').length > 0) {
   });
 }
 
+//Input Button Hover
+if ($('.wpcf7-form-control.wpcf7-submit').length > 0) {
+  $('.wpcf7-form-control.wpcf7-submit').before('<div class="input-underline">')
+  $('.wpcf7-form-control.wpcf7-submit').after('</div>')
+}
+
 var swiperAbout = new Swiper('.swiper-about', {
   autoplay: {
     delay: 5000,
   },
   pagination: {
     el: '.swiper-pagination',
+  },
+});
+
+var swiperBrands = new Swiper('.p_main__brands-photos', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2000,
   },
 });
 

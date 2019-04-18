@@ -50,7 +50,7 @@
     			</div>
     		</div>
     	</div>
-    	<div class="footer__logo">
+    	<!-- <div class="footer__logo">
     		<div class="container">
 	    		<div class="row">
 	    			<div class="col-md-12">
@@ -60,7 +60,7 @@
 	    			</div>
 	    		</div>
 	    	</div>
-    	</div>
+    	</div> -->
     </footer>
     <?php if( is_page_template( 'tpl_map.php' )): ?>
         <div class="callback__modal">
