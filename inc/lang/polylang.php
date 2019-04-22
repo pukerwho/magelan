@@ -22,6 +22,7 @@ pll_register_string( 'map_title', 'Карта ТРЦ' );
 pll_register_string( 'contact_description', 'Маєш питання, потрібна додаткова інформація або у тебе є корисна порада чи пропозиція?' );
 pll_register_string( 'contact_description_second', 'Якщо вас зацікавила оренда торгових площ в ТРЦ МАГЕЛАН, надішліть інформацію про Вас.' );
 pll_register_string( 'contact_description_lead', 'Ми обов`язково розглянемо її та зв`яжемося з Вами.' );
+pll_register_string( 'contact_description_arenda', 'Для отримання додаткової інформації щодо оренди просимо зв`язатися:' );
 pll_register_string( 'contact_map_box', '03187, Україна<br>м.Київ, пр. Академіка Глушкова 13-Б' );
 pll_register_string( 'back_entertainment', 'Назад до списку розваг' );
 pll_register_string( 'back_restraunt', 'Назад до списку ресторанів' );
