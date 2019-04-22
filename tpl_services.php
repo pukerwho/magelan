@@ -1,15 +1,21 @@
+<?php
+/*
+Template Name: Послуги
+*/
+?>
+
 <?php get_header(); ?>
 
-<div class="p_restaurants">
+<div class="p_services">
 	<div class="heroslider">
 		<!-- Swiper -->
-	  <div class="swiper-container swiper-restaurants">
+	  <div class="swiper-container swiper-services">
 	    <div class="swiper-wrapper">
 	    	<?php
-				$restaurants_photos = carbon_get_theme_option( 'crb_restaurants' );
-				foreach ( $restaurants_photos as $restaurants_photo ): ?>
+				$services_photos = carbon_get_theme_option( 'crb_services' );
+				foreach ( $services_photos as $services_photo ): ?>
 					<div class="swiper-slide">
-						<img src="<?php echo $restaurants_photo['crb_restaurants_img'] ?>" alt="">	
+						<img src="<?php echo $services_photo['crb_services_img'] ?>" alt="">	
 					</div>
 				<?php endforeach; ?>
 	    </div>
@@ -22,7 +28,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="archive-inner__title">
-						<h1><?php pll_e('Ресторани'); ?></h1>	
+						<h1><?php pll_e('Послуги'); ?></h1>	
 					</div>
 				</div>
 			</div>
@@ -43,23 +49,23 @@
 			</div>
 			<div id="firstFloor" class="row tabcontent">
 				<?php 
-			  $custom_query_restaurants = new WP_Query( array( 
-			  	'post_type' => 'restaurants', 
+			  $custom_query_services = new WP_Query( array( 
+			  	'post_type' => 'services', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
 			  	'meta_query' => array(
 						array(
-							'key'     => 'crb_restaurants_floor',
-							'value'   => 'restaurants_first_floor',
+							'key'     => 'crb_services_floor',
+							'value'   => 'services_first_floor',
 							'compare' => '=',
 						),
 					)
 			  ) );
-			  if ($custom_query_restaurants->have_posts()) : while ($custom_query_restaurants->have_posts()) : $custom_query_restaurants->the_post(); ?>
+			  if ($custom_query_services->have_posts()) : while ($custom_query_services->have_posts()) : $custom_query_services->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
-			  				<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
+			  				<img src="<?php echo carbon_get_the_post_meta('crb_services_logo'); ?>" alt="<?php the_title(); ?>">
 			  			</div>
 			  			<a href="<?php echo get_permalink(); ?>">
 				  			<div class="archive-item__title">
@@ -72,23 +78,23 @@
 			</div>
 			<div id="secondFloor" class="row tabcontent">
 				<?php 
-			  $custom_query_restaurants = new WP_Query( array( 
-			  	'post_type' => 'restaurants', 
+			  $custom_query_services = new WP_Query( array( 
+			  	'post_type' => 'services', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
 			  	'meta_query' => array(
 						array(
-							'key'     => 'crb_restaurants_floor',
-							'value'   => 'restaurants_second_floor',
+							'key'     => 'crb_services_floor',
+							'value'   => 'services_second_floor',
 							'compare' => '=',
 						),
 					)
 			  ) );
-			  if ($custom_query_restaurants->have_posts()) : while ($custom_query_restaurants->have_posts()) : $custom_query_restaurants->the_post(); ?>
+			  if ($custom_query_services->have_posts()) : while ($custom_query_services->have_posts()) : $custom_query_services->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
-			  				<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
+			  				<img src="<?php echo carbon_get_the_post_meta('crb_services_logo'); ?>" alt="<?php the_title(); ?>">
 			  			</div>
 			  			<a href="<?php echo get_permalink(); ?>">
 				  			<div class="archive-item__title">
@@ -101,23 +107,23 @@
 			</div>
 			<div id="thirdFloor" class="row tabcontent">
 				<?php 
-			  $custom_query_restaurants = new WP_Query( array( 
-			  	'post_type' => 'restaurants', 
+			  $custom_query_services = new WP_Query( array( 
+			  	'post_type' => 'services', 
 			  	'orderby' => 'menu_order',
 			  	'order' => 'ASC',
 			  	'meta_query' => array(
 						array(
-							'key'     => 'crb_restaurants_floor',
-							'value'   => 'restaurants_third_floor',
+							'key'     => 'crb_services_floor',
+							'value'   => 'services_third_floor',
 							'compare' => '=',
 						),
 					)
 			  ) );
-			  if ($custom_query_restaurants->have_posts()) : while ($custom_query_restaurants->have_posts()) : $custom_query_restaurants->the_post(); ?>
+			  if ($custom_query_services->have_posts()) : while ($custom_query_services->have_posts()) : $custom_query_services->the_post(); ?>
 			  	<div class="col-md-3">
 			  		<div class="archive-item">
 			  			<div class="archive-item__logo">
-			  				<img src="<?php echo carbon_get_the_post_meta('crb_restaurants_logo'); ?>" alt="<?php the_title(); ?>">
+			  				<img src="<?php echo carbon_get_the_post_meta('crb_services_logo'); ?>" alt="<?php the_title(); ?>">
 			  			</div>
 			  			<a href="<?php echo get_permalink(); ?>">
 				  			<div class="archive-item__title">

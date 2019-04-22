@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Новини
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="p_news">

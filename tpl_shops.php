@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Магазини
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="p_shops">
@@ -22,7 +28,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="archive-inner__title">
-						<h1><?php _e('Магазини', 'magelan-theme'); ?></h1>	
+						<h1><?php pll_e('Магазини'); ?></h1>	
 					</div>
 				</div>
 			</div>
@@ -30,13 +36,13 @@
 				<div class="col-md-12">
 					<div class="archive-tabs">
 						<div class="archive-tab active" onclick="showContent(event, 'firstFloor')">
-							<?php _e('I Поверх', 'magelan-theme'); ?>
+							<?php pll_e('I Поверх'); ?>
 						</div>
 						<div class="archive-tab" onclick="showContent(event, 'secondFloor')">
-							<?php _e('II Поверх', 'magelan-theme'); ?>
+							<?php pll_e('II Поверх'); ?>
 						</div>
 						<div class="archive-tab" onclick="showContent(event, 'thirdFloor')">
-							<?php _e('III Поверх', 'magelan-theme'); ?>
+							<?php pll_e('III Поверх'); ?>
 						</div>
 					</div>
 				</div>

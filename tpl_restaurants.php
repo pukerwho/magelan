@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Ресторани
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="p_restaurants">
