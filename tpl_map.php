@@ -29,7 +29,7 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li class="active" onclick="showMapContent(event, 'restaurants_first')">
-								<?php pll_e('Рестораны'); ?>
+								<?php pll_e('Ресторани'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_first')">
 								<?php pll_e('Розваги'); ?>
@@ -45,7 +45,7 @@ Template Name: Карта
 					<div class="p_map__nav-floor">
 						<div class="p_map__nav-heading">
 							<div class="p_map__nav-subtitle">
-								<?php pll_e('II  Поверх'); ?>
+								<?php pll_e('II Поверх'); ?>
 							</div>
 							<div class="p_map__nav-arrow">
 								<img src="<?php bloginfo('template_url') ?>/img/back.svg" alt="">
@@ -53,7 +53,7 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li onclick="showMapContent(event, 'restaurants_second')">
-								<?php pll_e('Рестораны'); ?>
+								<?php pll_e('Ресторани'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_second')">
 								<?php pll_e('Розваги'); ?>
@@ -69,7 +69,7 @@ Template Name: Карта
 					<div class="p_map__nav-floor">
 						<div class="p_map__nav-heading">
 							<div class="p_map__nav-subtitle">
-								<?php pll_e('III  Поверх'); ?>
+								<?php pll_e('III Поверх'); ?>
 							</div>
 							<div class="p_map__nav-arrow">
 								<img src="<?php bloginfo('template_url') ?>/img/back.svg" alt="">
@@ -77,7 +77,7 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li onclick="showMapContent(event, 'restaurants_third')">
-								<?php pll_e('Рестораны'); ?>
+								<?php pll_e('Ресторани'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_third')">
 								<?php pll_e('Розваги'); ?>
