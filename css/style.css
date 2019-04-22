@@ -9794,6 +9794,12 @@ div.wpcf7-response-output {
     position: relative;
     z-index: 2; }
 
+.page-template-tpl_restaurants .archive-inner, .page-template-tpl_services .archive-inner, .page-template-tpl_shops .archive-inner, .page-template-tpl_entertainment .archive-inner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6dfffb), to(#0e203c));
+  background-image: -webkit-linear-gradient(top, #6dfffb, #0e203c);
+  background-image: -o-linear-gradient(top, #6dfffb, #0e203c);
+  background-image: linear-gradient(to bottom, #6dfffb, #0e203c); }
+
 .single-shops .single-inner, .single-restaurants .single-inner, .single-entertainment .single-inner, .single-services .single-inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#6dfffb), to(#0e203c));
   background-image: -webkit-linear-gradient(top, #6dfffb, #0e203c);
