@@ -11,7 +11,7 @@
 						<div class="p_main__restaurants-text p_main__block-text">
 							<?php pll_e('Опис для Ресторанів'); ?>
 						</div>
-						<a href="/restaurants">
+						<a href="<?php echo get_page_url('tpl_restaurants') ?>">
 							<div class="p_main__more">
 								<?php pll_e('Детальнiше'); ?>
 							</div>

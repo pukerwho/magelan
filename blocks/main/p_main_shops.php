@@ -11,7 +11,7 @@
 						<div class="p_main__shops-text p_main__block-text">
 							<?php pll_e('Опис для Магазинів'); ?>
 						</div>
-						<a href="/shops">
+						<a href="<?php echo get_page_url('tpl_shops') ?>">
 							<div class="p_main__more">
 								<?php pll_e('Детальнiше'); ?>
 							</div>

@@ -14,7 +14,7 @@
 						<div class="p_main__entertainment-text p_main__block-text">
 							<?php pll_e('Опис для Розваг'); ?>
 						</div>
-						<a href="/entertainment">
+						<a href="<?php echo get_page_url('tpl_entertainment') ?>">
 							<div class="p_main__more">
 								<?php pll_e('Детальнiше'); ?>
 							</div>

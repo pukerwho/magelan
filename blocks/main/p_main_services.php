@@ -14,7 +14,7 @@
 						<div class="p_main__services-text p_main__block-text">
 							<?php pll_e('Опис для Послуг'); ?>
 						</div>
-						<a href="/services">
+						<a href="<?php echo get_page_url('tpl_services') ?>">
 							<div class="p_main__more">
 								<?php pll_e('Детальнiше'); ?>
 							</div>
