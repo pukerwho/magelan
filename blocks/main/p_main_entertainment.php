@@ -8,15 +8,15 @@
 					</div>
 					<div class="p_main__entertainment-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
 						<div class="p_main__entertainment-title p_main__block-title">
-							<?php pll_e('Розваги', 'magelan-theme'); ?>
+							<?php pll_e('Розваги'); ?>
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__entertainment-text p_main__block-text">
-							<?php pll_e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
+							<?php pll_e('Опис для Розваг'); ?>
 						</div>
 						<a href="/entertainment">
 							<div class="p_main__more">
-								<?php pll_e('Детальнiше', 'magelan-theme'); ?>
+								<?php pll_e('Детальнiше'); ?>
 							</div>
 						</a>
 					</div>

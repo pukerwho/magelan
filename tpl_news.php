@@ -35,7 +35,7 @@ Template Name: Новини
 						<div class="p_news__description">
 							<?php echo carbon_get_the_post_meta('crb_news_description'); ?>
 						</div>
-						<a href="<?php echo get_the_permalink(); ?>">
+						<a href="<?php echo carbon_get_the_post_meta('crb_news_link'); ?>" target="_blank">
 							<div class="p_main__news-more">
 								<div class="p_main__news-more__line"></div>
 								<?php pll_e('Дізнатися більше'); ?>
