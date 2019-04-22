@@ -7,7 +7,7 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
   Container::make( 'theme_options', 'Options' )
     ->add_tab( __('Общие настройки'), array(
-        
+        Field::make( 'text', 'footer_phone', 'Контактний телефон (подвал)' ),
     ) )
     ->add_tab( __('Бренды'), array(
         Field::make( 'complex', 'crb_brands', 'Бренды' )
@@ -16,7 +16,11 @@ function crb_attach_theme_options() {
                 Field::make( 'image', 'crb_brands_img', 'Логотип' )->set_value_type( 'url'),
         ) ),
     ) )
+    ->add_tab( __('Про нас'), array(
+        Field::make( 'image', 'crb_about_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
+    ) )
     ->add_tab( __('Магазины'), array(
+        Field::make( 'image', 'crb_shops_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
         Field::make( 'complex', 'crb_shops', 'Слайдер' )
             ->set_layout( 'tabbed-horizontal')
             ->add_fields( array(
@@ -24,6 +28,7 @@ function crb_attach_theme_options() {
         ) ),
     ) )
     ->add_tab( __('Ресторани'), array(
+        Field::make( 'image', 'crb_restaurants_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
         Field::make( 'complex', 'crb_restaurants', 'Слайдер' )
             ->set_layout( 'tabbed-horizontal')
             ->add_fields( array(
@@ -31,6 +36,7 @@ function crb_attach_theme_options() {
         ) ),
     ) )
     ->add_tab( __('Розваги'), array(
+        Field::make( 'image', 'crb_entertainment_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
         Field::make( 'complex', 'crb_entertainment', 'Слайдер' )
             ->set_layout( 'tabbed-horizontal')
             ->add_fields( array(
@@ -38,6 +44,7 @@ function crb_attach_theme_options() {
         ) ),
     ) )
     ->add_tab( __('Послуги'), array(
+        Field::make( 'image', 'crb_services_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
         Field::make( 'complex', 'crb_services', 'Слайдер' )
             ->set_layout( 'tabbed-horizontal')
             ->add_fields( array(

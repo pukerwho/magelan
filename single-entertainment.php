@@ -29,7 +29,7 @@
 									<img src="<?php bloginfo('template_url') ?>/img/back.svg" height="21px" alt="">
 								</div>
 								<div class="single-inner__back-text">
-									<?php _e('Назад до списку розваг', 'magelan-theme'); ?>
+									<?php pll_e('Назад до списку розваг'); ?>
 								</div>
 							</div>
 						</a>

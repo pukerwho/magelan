@@ -12,14 +12,14 @@ Template Name: Контакти
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_contact__title">
-					<h1><?php _e('Контакти', 'magelan-theme'); ?></h1>
+					<h1><?php the_title(); ?></h1>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="p_contact__description" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-					<?php _e('Маєш питання, потрібна додаткова інформація або у тебе є корисна порада чи пропозиція?', 'magelan-theme'); ?>
+					<?php pll_e( 'Маєш питання, потрібна додаткова інформація або у тебе є корисна порада чи пропозиція?' ); ?>
 				</div>
 			</div>
 		</div>
@@ -54,7 +54,7 @@ Template Name: Контакти
 				<div class="p_contact__map" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="550">
 					<?php echo carbon_get_the_post_meta('crb_contacts_map') ?>
 					<div class="p_contact__map-box">
-						<?php _e('03187, Україна<br>м.Київ, пр. Академіка Глушкова 13-Б', 'magelan-theme'); ?>
+						<?php pll_e('03187, Україна<br>м.Київ, пр. Академіка Глушкова 13-Б'); ?>
 					</div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@ Template Name: Контакти
 		<div class="row">
 			<div class="col-md-6">
 				<div class="p_contact__description" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-					<?php _e('Для отримання додаткової інформації щодо оренди просимо зв`язатися:', 'magelan-theme'); ?>
+					<?php pll_e('Для отримання додаткової інформації щодо оренди просимо зв`язатися:'); ?>
 				</div>
 			</div>
 		</div>
@@ -110,10 +110,10 @@ Template Name: Контакти
 			<div class="col-md-5">
 				<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
 					<div class="p_contact__description">
-						<?php _e('Якщо вас зацікавила оренда торгових площ в ТРЦ МАГЕЛАН, надішліть інформацію про Вас.', 'magelan-theme'); ?>
+						<?php pll_e('Якщо вас зацікавила оренда торгових площ в ТРЦ МАГЕЛАН, надішліть інформацію про Вас.'); ?>
 					</div>
 					<div class="p_contact__bottom-lead">
-						<?php _e('Ми обов`язково розглянемо її та зв`яжемося з Вами.', 'magelan-theme'); ?>
+						<?php pll_e('Ми обов`язково розглянемо її та зв`яжемося з Вами.'); ?>
 					</div>
 				</div>
 			</div>

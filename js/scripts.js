@@ -88,6 +88,19 @@ var swiperAbout = new Swiper('.swiper-about', {
   },
 });
 
+
+var swiperNews = new Swiper('.p_main__news-bg', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
 var swiperBrands = new Swiper('.p_main__brands-photos', {
   slidesPerView: 3,
   spaceBetween: 30,

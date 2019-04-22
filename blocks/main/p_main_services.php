@@ -8,15 +8,15 @@
 					</div>
 					<div class="p_main__services-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
 						<div class="p_main__services-title p_main__block-title">
-							<?php _e('Послуги', 'magelan-theme'); ?>
+							<?php pll_e('Послуги', 'magelan-theme'); ?>
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__services-text p_main__block-text">
-							<?php _e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
+							<?php pll_e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
 						</div>
 						<a href="/services">
 							<div class="p_main__more">
-								<?php _e('Детальнiше', 'magelan-theme'); ?>
+								<?php pll_e('Детальнiше', 'magelan-theme'); ?>
 							</div>
 						</a>
 					</div>

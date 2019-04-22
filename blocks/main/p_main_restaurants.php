@@ -5,15 +5,15 @@
 				<div class="p_main__restaurants-content p_main__block-content">
 					<div class="p_main__restaurants-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
 						<div class="p_main__restaurants-title p_main__block-title">
-							<?php _e('Ресторани', 'magelan-theme'); ?>
+							<?php pll_e('Ресторани', 'magelan-theme'); ?>
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__restaurants-text p_main__block-text">
-							<?php _e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
+							<?php pll_e('ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.', 'magelan-theme'); ?>
 						</div>
 						<a href="/restaurants">
 							<div class="p_main__more">
-								<?php _e('Детальнiше', 'magelan-theme'); ?>
+								<?php pll_e('Детальнiше', 'magelan-theme'); ?>
 							</div>
 						</a>
 					</div>

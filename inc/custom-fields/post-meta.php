@@ -9,6 +9,7 @@ function crb_post_theme_options() {
     ->where( 'post_type', '=', 'news' )
     ->add_fields( array(
       Field::make( 'textarea', 'crb_news_description', 'Короткое описание' ),
+      Field::make( 'text', 'crb_news_link', 'Посилання' ),
   ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'shops' )

@@ -10,7 +10,7 @@
 			<div class="col-md-12">
 				<div class="p main__welcome-showtitle">
 					<div class="p_main__welcome-title">
-						<?php _e('Магелан', 'magelan-theme'); ?>
+						<?php pll_e('Магелан'); ?>
 					</div>	
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 				<div class="col-md-12">
 					<div class="p_main__welcome-social__content">
 						<div>
-							Ми в соц. мережах:
+							<?php pll_e('Ми в соц. мережах'); ?>:
 						</div>
 						<div class="p_main__welcome-social__content-links">
 							<?php if(carbon_get_theme_option('crb_facebook')): ?>

@@ -11,7 +11,7 @@ Template Name: Карта
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_map__title">
-					<h1><?php _e('Карта ТРЦ', 'magelan-theme'); ?></h1>	
+					<h1><?php pll_e('Карта ТРЦ'); ?></h1>	
 				</div>
 			</div>
 		</div>
@@ -21,7 +21,7 @@ Template Name: Карта
 					<div class="p_map__nav-floor">
 						<div class="p_map__nav-heading p_map__nav-floor-open">
 							<div class="p_map__nav-subtitle">
-								I Поверх
+								<?php pll_e('I Поверх'); ?>
 							</div>
 							<div class="p_map__nav-arrow">
 								<img src="<?php bloginfo('template_url') ?>/img/back.svg" alt="">
@@ -29,23 +29,23 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li class="active" onclick="showMapContent(event, 'restaurants_first')">
-								Рестораны
+								<?php pll_e('Рестораны'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_first')">
-								Розваги
+								<?php pll_e('Розваги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'services_first')">
-								Послуги
+								<?php pll_e('Послуги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'shops_first')">
-								Магазини
+								<?php pll_e('Магазини'); ?>
 							</li>
 						</div>
 					</div>
 					<div class="p_map__nav-floor">
 						<div class="p_map__nav-heading">
 							<div class="p_map__nav-subtitle">
-								II  Поверх
+								<?php pll_e('II  Поверх'); ?>
 							</div>
 							<div class="p_map__nav-arrow">
 								<img src="<?php bloginfo('template_url') ?>/img/back.svg" alt="">
@@ -53,23 +53,23 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li onclick="showMapContent(event, 'restaurants_second')">
-								Рестораны
+								<?php pll_e('Рестораны'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_second')">
-								Розваги
+								<?php pll_e('Розваги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'services_second')">
-								Послуги
+								<?php pll_e('Послуги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'shops_second')">
-								Магазини
+								<?php pll_e('Магазини'); ?>
 							</li>
 						</div>
 					</div>
 					<div class="p_map__nav-floor">
 						<div class="p_map__nav-heading">
 							<div class="p_map__nav-subtitle">
-								III  Поверх
+								<?php pll_e('III  Поверх'); ?>
 							</div>
 							<div class="p_map__nav-arrow">
 								<img src="<?php bloginfo('template_url') ?>/img/back.svg" alt="">
@@ -77,16 +77,16 @@ Template Name: Карта
 						</div>
 						<div class="p_map__nav-list">
 							<li onclick="showMapContent(event, 'restaurants_third')">
-								Рестораны
+								<?php pll_e('Рестораны'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'entertainment_third')">
-								Розваги
+								<?php pll_e('Розваги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'services_third')">
-								Послуги
+								<?php pll_e('Послуги'); ?>
 							</li>
 							<li onclick="showMapContent(event, 'shops_third')">
-								Магазини
+								<?php pll_e('Магазини'); ?>
 							</li>
 						</div>
 					</div>
@@ -140,7 +140,7 @@ Template Name: Карта
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="callback">
-					<?php _e('Форма зворотнього зв’язку', 'magelan-theme'); ?>
+					<?php pll_e('Форма зворотнього зв’язку'); ?>
 				</div>
 			</div>
 		</div>
