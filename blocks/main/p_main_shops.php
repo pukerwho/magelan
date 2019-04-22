@@ -18,7 +18,7 @@
 						</a>
 					</div>
 					<div class="p_main__shops-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
-						<img src="<?php bloginfo('template_url') ?>/img/p_main_about.jpg" alt="Про ТРЦ">
+						<img src="<?php echo carbon_get_theme_option('crb_shops_thumb') ?>" alt="Магазини">
 					</div>
 				</div>
 			</div>

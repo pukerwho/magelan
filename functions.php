@@ -24,12 +24,20 @@ if( !isset( $content_width ) ) {
     $content_width = 960;
 }
 
+
+
 require_once get_template_directory() . '/inc/carbon-fields/carbon-fields-plugin.php';
 require_once get_template_directory() . '/inc/custom-fields/settings-meta.php';
 require_once get_template_directory() . '/inc/custom-fields/post-meta.php';
 require_once get_template_directory() . '/inc/custom-fields/pages-meta.php';
 require_once get_template_directory() . '/inc/TGM/example.php';
-// require_once get_template_directory() . '/inc/lang/polylang.php';
+
+function check_polylang_plugin() {
+    if(is_plugin_active('polylang/polylang.php')) {
+        require_once get_template_directory() . '/inc/lang/polylang.php'; 
+    }
+}
+add_action( 'admin_init', 'check_polylang_plugin' );
 
 
 register_nav_menus( array(

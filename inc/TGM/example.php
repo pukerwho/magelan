@@ -81,8 +81,8 @@ function estate_register_required_plugins() {
 		),
 
 		array(
-			'name'               => 'Polilang', // The plugin name.
-			'slug'               => 'polilang', // The plugin slug (typically the folder name).
+			'name'               => 'Polylang', // The plugin name.
+			'slug'               => 'polylang', // The plugin slug (typically the folder name).
 			'source'             => get_template_directory() . '/lib/plugins/polylang.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.

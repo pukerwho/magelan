@@ -4,7 +4,7 @@
 			<div class="col-md-12 d-flex justify-content-center">
 				<div class="p_main__entertainment-content p_main__block-content">
 					<div class="p_main__entertainment-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-						<img src="<?php bloginfo('template_url') ?>/img/p_main_about.jpg" alt="Про ТРЦ">
+						<img src="<?php echo carbon_get_theme_option('crb_entertainment_thumb') ?>" alt="Розваги">
 					</div>
 					<div class="p_main__entertainment-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
 						<div class="p_main__entertainment-title p_main__block-title">
