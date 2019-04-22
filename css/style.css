@@ -9199,6 +9199,8 @@ div.wpcf7-response-output {
     background-color: #0e203c; }
     .header-in #head_menu li a {
       color: #ffffff !important; }
+    .header-in .header__lang select {
+      color: #ffffff; }
   .header .mobile-menu span {
     background-color: #ffffff; }
   .header__logo {
