@@ -118,14 +118,27 @@ if ($(document).width() < 760) {
   })
 }
 
-var swiperBrands = new Swiper('.p_main__brands-photos', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-});
+if ($(document).width() > 760) {
+  var swiperBrands = new Swiper('.p_main__brands-photos', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+  })
+}
+
+if ($(document).width() < 760) {
+  var swiperBrands = new Swiper('.p_main__brands-photos', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+  })
+}
 
 var swiperShops = new Swiper('.swiper-shops', {
   autoplay: {

@@ -12423,6 +12423,8 @@ button.swiper-pagination-bullet {
     margin-left: 0 !important; }
   .p_main__brands {
     margin-bottom: 60px; }
+    .p_main__brands img {
+      width: 100%; }
     .p_main__brands-photo {
       width: 100%;
       text-align: center;
