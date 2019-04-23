@@ -9426,7 +9426,8 @@ div.wpcf7-response-output {
     -webkit-background-size: cover !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 50% !important; }
+    background-position-x: 50% !important;
+    background-position-y: 100% !important; }
   .p_main__welcome-birds {
     opacity: 0;
     width: 100%;
