@@ -9977,6 +9977,12 @@ div.wpcf7-response-output {
   margin-bottom: 30px; }
   .p_news__row:last-child {
     margin-bottom: 50px; }
+.p_news__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px; }
 .p_news__title h1 {
   display: inline-block;
   color: #ffffff;
