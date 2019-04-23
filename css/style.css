@@ -12413,12 +12413,14 @@ button.swiper-pagination-bullet {
   .p_main__services-content {
     margin-bottom: 60px; }
   .p_main__news-bg {
-    padding: 97px 15px 26px 15px; }
+    padding: 97px 15px 26px 15px !important; }
     .p_main__news-bg .swiper-slide {
       padding: 0px 30px; }
   .p_main__news-title__inner {
     top: 35px;
     font-size: 65px; }
+  .p_main__news .swiper-pagination-bullets {
+    margin-left: 0 !important; }
   .p_main__brands {
     margin-bottom: 60px; }
     .p_main__brands-photo {
