@@ -17,12 +17,17 @@ $(window).scroll(function(){
 var url = WPURLS.templateUrl;
 var bgSmall = '/img/bg.jpg';
 var bgLarge = '/img/bg@2x.jpg';
+var bgFull = '/img/magelan_bg_big.jpg';
 if ($(document).width() > 992) {
   if ($('.p_main__shops').length > 0) {
     var bgHeight = $('.p_main__shops').offset().top;
     var shopsHeight = $('.p_main__shops').height();
-    if (bgHeight > 1800) {
+    console.log(bgHeight);
+    if (bgHeight > 1200 & bgHeight < 2100) {
       bgUrl = url + '/' + bgLarge;
+    }
+    else if (bgHeight > 2101) {
+      bgUrl = url + '/' + bgFull;
     }
     else {
       bgUrl = url + '/' + bgSmall;
