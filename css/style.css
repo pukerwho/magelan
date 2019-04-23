@@ -12414,6 +12414,8 @@ button.swiper-pagination-bullet {
     margin-bottom: 60px; }
   .p_main__news-bg {
     padding: 97px 15px 26px 15px; }
+    .p_main__news-bg .swiper-slide {
+      padding: 0px 30px; }
   .p_main__news-title__inner {
     top: 35px;
     font-size: 65px; }
@@ -12449,6 +12451,9 @@ button.swiper-pagination-bullet {
   .p_contact__bottom-lead {
     margin-bottom: 30px; }
 
+  .p_news__grid {
+    -ms-grid-columns: 1fr [1];
+    grid-template-columns: repeat(1, 1fr); }
   .p_news__photo {
     margin-bottom: 30px; }
 
