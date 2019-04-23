@@ -14,6 +14,7 @@ pll_register_string( 'restraunt_description', 'Опис для Ресторан�
 pll_register_string( 'services_title', 'Послуги' );
 pll_register_string( 'services_description', 'Опис для Послуг' );
 pll_register_string( 'news_title', 'Новини та  акції' );
+pll_register_string( 'news_more', 'Дізнатися більше' );
 pll_register_string( 'callback_form_text', 'Форма зворотнього зв’язку' );
 pll_register_string( 'first_floor', 'I Поверх' );
 pll_register_string( 'second_floor', 'II Поверх' );
