@@ -12366,6 +12366,16 @@ button.swiper-pagination-bullet {
       -o-transition: all 0.4s;
       transition: all 0.4s; }
 
+  .mobile-lang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .mobile-lang li {
+      margin-right: 30px; }
+      .mobile-lang li:last-child {
+        margin-right: 0px; }
+
   .p_main__welcome-bg {
     background-position: 65% !important; }
   .p_main__welcome-title {

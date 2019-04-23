@@ -55,6 +55,9 @@
                 <span></span>
               </div>
               <div class="mobile-cover">
+                <div class="mobile-lang">
+                  <?php pll_the_languages(); ?>  
+                </div>
                 <?php wp_nav_menu([
                   'theme_location' => 'head_menu',
                   'container' => 'div',
