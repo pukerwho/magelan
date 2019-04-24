@@ -95,6 +95,9 @@
                 ]); ?>
               </div>
               <div class="mobile-show">
+                <div class="mobile-lang">
+                  <?php pll_the_languages(); ?>  
+                </div>
                 <div class="mobile-menu">
                   <span></span>
                   <span></span>
