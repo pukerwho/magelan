@@ -157,3 +157,17 @@ function get_page_url($template_name) {
     }
     return get_bloginfo('url');
 }
+
+function my_login_logo() { ?>
+  <style type="text/css">
+    #login h1 a, .login h1 a {
+      background-image: url(<?php bloginfo('template_url') ?>/img/mainlogo.svg);
+      width: 100%;
+      height: 53px;
+      background-size: auto;
+      padding: 20px 0px;
+      background-position: center;
+    }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

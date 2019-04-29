@@ -11,11 +11,12 @@ Template Name: Магазини
 		<!-- Swiper -->
 	  <div class="swiper-container swiper-shops">
 	    <div class="swiper-wrapper">
-	    	<?php
-				$shops_photos = carbon_get_theme_option( 'crb_shops' );
-				foreach ( $shops_photos as $shops_photo ): ?>
+	    	<?php 
+				$services_photos = carbon_get_the_post_meta('crb_shops_slider_photos');
+				foreach ( $services_photos as $services_photo ): ?>
+					<?php $photo_src = wp_get_attachment_image_src($services_photo, 'large'); ?>
 					<div class="swiper-slide">
-						<img src="<?php echo $shops_photo['crb_shops_img'] ?>" alt="">	
+						<img src="<?php echo $photo_src[0]; ?>"/>
 					</div>
 				<?php endforeach; ?>
 	    </div>

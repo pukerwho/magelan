@@ -37,7 +37,7 @@
 							</div>
 						</a>
 					</div>
-				<?php endwhile; endif; ?>
+				<?php endwhile; endif; wp_reset_postdata(); ?>
 			</div>
 			<!-- Add Pagination -->
 	    <div class="swiper-pagination"></div>
@@ -52,5 +52,4 @@
 			</div> -->
 		</div>
 	</div>
-	
 </div>

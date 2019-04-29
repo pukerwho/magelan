@@ -11,11 +11,12 @@ Template Name: Ресторани
 		<!-- Swiper -->
 	  <div class="swiper-container swiper-restaurants">
 	    <div class="swiper-wrapper">
-	    	<?php
-				$restaurants_photos = carbon_get_theme_option( 'crb_restaurants' );
-				foreach ( $restaurants_photos as $restaurants_photo ): ?>
+	    	<?php 
+				$services_photos = carbon_get_the_post_meta('crb_restaurants_slider_photos');
+				foreach ( $services_photos as $services_photo ): ?>
+					<?php $photo_src = wp_get_attachment_image_src($services_photo, 'large'); ?>
 					<div class="swiper-slide">
-						<img src="<?php echo $restaurants_photo['crb_restaurants_img'] ?>" alt="">	
+						<img src="<?php echo $photo_src[0]; ?>"/>
 					</div>
 				<?php endforeach; ?>
 	    </div>

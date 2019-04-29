@@ -11,11 +11,12 @@ Template Name: Послуги
 		<!-- Swiper -->
 	  <div class="swiper-container swiper-services">
 	    <div class="swiper-wrapper">
-	    	<?php
-				$services_photos = carbon_get_theme_option( 'crb_services' );
+	    	<?php 
+				$services_photos = carbon_get_the_post_meta('crb_services_slider_photos');
 				foreach ( $services_photos as $services_photo ): ?>
+					<?php $photo_src = wp_get_attachment_image_src($services_photo, 'large'); ?>
 					<div class="swiper-slide">
-						<img src="<?php echo $services_photo['crb_services_img'] ?>" alt="">	
+						<img src="<?php echo $photo_src[0]; ?>"/>
 					</div>
 				<?php endforeach; ?>
 	    </div>

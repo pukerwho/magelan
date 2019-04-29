@@ -9,7 +9,7 @@
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__restaurants-text p_main__block-text">
-							<?php pll_e('Опис для Ресторанів'); ?>
+							<?php echo carbon_get_the_post_meta('crb_home_restaurants_description') ?>
 						</div>
 						<a href="<?php echo get_page_url('tpl_restaurants') ?>">
 							<div class="p_main__more">
@@ -18,7 +18,7 @@
 						</a>
 					</div>
 					<div class="p_main__restaurants-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
-						<img src="<?php echo carbon_get_theme_option('crb_restaurants_thumb') ?>" alt="Ресторани">
+						<img src="<?php echo carbon_get_the_post_meta('crb_home_restaurants_photo') ?>" alt="Ресторани">
 					</div>
 				</div>
 			</div>

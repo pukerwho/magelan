@@ -3,16 +3,11 @@
 pll_register_string( 'main_name', 'Магелан' );
 pll_register_string( 'social_text', 'Ми в соц. мережах' );
 pll_register_string( 'about_title', 'Про ТРЦ' );
-pll_register_string( 'Описание ТРЦ', 'ТРЦ Магелан розташований на Правому березі Дніпра, за адресою: проспект Академіка Глушкова 13 Б, (Одеська площа), на пересіченні головних транспортних магістралей: Окружної дороги і Одеської траси.' );
 pll_register_string( 'block_more', 'Детальнiше' );
 pll_register_string( 'entertainment_title', 'Розваги' );
-pll_register_string( 'entertainment_description', 'Опис для Розваг' );
 pll_register_string( 'shop_title', 'Магазини' );
-pll_register_string( 'shop_description', 'Опис для Магазинів' );
 pll_register_string( 'restraunt_title', 'Ресторани' );
-pll_register_string( 'restraunt_description', 'Опис для Ресторанів' );
 pll_register_string( 'services_title', 'Послуги' );
-pll_register_string( 'services_description', 'Опис для Послуг' );
 pll_register_string( 'news_title', 'Новини та  акції' );
 pll_register_string( 'news_more', 'Дізнатися більше' );
 pll_register_string( 'callback_form_text', 'Форма зворотнього зв’язку' );

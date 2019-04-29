@@ -11,11 +11,12 @@ Template Name: Розваги
 		<!-- Swiper -->
 	  <div class="swiper-container swiper-entertainment">
 	    <div class="swiper-wrapper">
-	    	<?php
-				$entertainment_photos = carbon_get_theme_option( 'crb_entertainment' );
-				foreach ( $entertainment_photos as $entertainment_photo ): ?>
+	    	<?php 
+				$services_photos = carbon_get_the_post_meta('crb_entertainment_slider_photos');
+				foreach ( $services_photos as $services_photo ): ?>
+					<?php $photo_src = wp_get_attachment_image_src($services_photo, 'large'); ?>
 					<div class="swiper-slide">
-						<img src="<?php echo $entertainment_photo['crb_entertainment_img'] ?>" alt="">	
+						<img src="<?php echo $photo_src[0]; ?>"/>
 					</div>
 				<?php endforeach; ?>
 	    </div>

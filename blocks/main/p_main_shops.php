@@ -9,7 +9,7 @@
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__shops-text p_main__block-text">
-							<?php pll_e('Опис для Магазинів'); ?>
+							<?php echo carbon_get_the_post_meta('crb_home_shops_description') ?>
 						</div>
 						<a href="<?php echo get_page_url('tpl_shops') ?>">
 							<div class="p_main__more">
@@ -18,7 +18,7 @@
 						</a>
 					</div>
 					<div class="p_main__shops-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
-						<img src="<?php echo carbon_get_theme_option('crb_shops_thumb') ?>" alt="Магазини">
+						<img src="<?php echo carbon_get_the_post_meta('crb_home_shops_photo') ?>" alt="Магазини">
 					</div>
 				</div>
 			</div>

@@ -4,7 +4,7 @@
 			<div class="col-md-12 d-flex justify-content-center">
 				<div class="p_main__entertainment-content p_main__block-content">
 					<div class="p_main__entertainment-img p_main__block-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-						<img src="<?php echo carbon_get_theme_option('crb_entertainment_thumb') ?>" alt="Розваги">
+						<img src="<?php echo carbon_get_the_post_meta('crb_home_entertainment_photo') ?>" alt="Розваги">
 					</div>
 					<div class="p_main__entertainment-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
 						<div class="p_main__entertainment-title p_main__block-title">
@@ -12,7 +12,7 @@
 						</div>
 						<div class="p_main__block-line"></div>
 						<div class="p_main__entertainment-text p_main__block-text">
-							<?php pll_e('Опис для Розваг'); ?>
+							<?php echo carbon_get_the_post_meta('crb_home_entertainment_description') ?>
 						</div>
 						<a href="<?php echo get_page_url('tpl_entertainment') ?>">
 							<div class="p_main__more">

@@ -16,41 +16,6 @@ function crb_attach_theme_options() {
                 Field::make( 'image', 'crb_brands_img', 'Логотип' )->set_value_type( 'url'),
         ) ),
     ) )
-    ->add_tab( __('Про нас'), array(
-        Field::make( 'image', 'crb_about_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
-    ) )
-    ->add_tab( __('Магазины'), array(
-        Field::make( 'image', 'crb_shops_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
-        Field::make( 'complex', 'crb_shops', 'Слайдер' )
-            ->set_layout( 'tabbed-horizontal')
-            ->add_fields( array(
-                Field::make( 'image', 'crb_shops_img', 'Фото в слайдере' )->set_value_type( 'url'),
-        ) ),
-    ) )
-    ->add_tab( __('Ресторани'), array(
-        Field::make( 'image', 'crb_restaurants_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
-        Field::make( 'complex', 'crb_restaurants', 'Слайдер' )
-            ->set_layout( 'tabbed-horizontal')
-            ->add_fields( array(
-                Field::make( 'image', 'crb_restaurants_img', 'Фото в слайдере' )->set_value_type( 'url'),
-        ) ),
-    ) )
-    ->add_tab( __('Розваги'), array(
-        Field::make( 'image', 'crb_entertainment_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
-        Field::make( 'complex', 'crb_entertainment', 'Слайдер' )
-            ->set_layout( 'tabbed-horizontal')
-            ->add_fields( array(
-                Field::make( 'image', 'crb_entertainment_img', 'Фото в слайдере' )->set_value_type( 'url'),
-        ) ),
-    ) )
-    ->add_tab( __('Послуги'), array(
-        Field::make( 'image', 'crb_services_thumb', 'Фото для головної сторінки' )->set_value_type( 'url'),
-        Field::make( 'complex', 'crb_services', 'Слайдер' )
-            ->set_layout( 'tabbed-horizontal')
-            ->add_fields( array(
-                Field::make( 'image', 'crb_services_img', 'Фото в слайдере' )->set_value_type( 'url'),
-        ) ),
-    ) )
     ->add_tab( __('Соцсети'), array(
         Field::make( 'text', 'crb_facebook', 'Посилання на Facebook' ),
         Field::make( 'text', 'crb_instagram', 'Посилання на Instagram' ),
